@@ -1,20 +1,1101 @@
-<?PHP
-$data = '';
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>NewMod</title>
 
-$user = 'user';
-$pass = 'pass';
+	<!-- mobile responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Responsive Multipurpose Parallax HTML5 Template">
+	
+	<meta name="author" content="Themefisher">
+	<meta name="generator" content="Hugo 0.74.1" />
 
-if (!empty($_REQUEST) ) {
-    if (!empty($_REQUEST[$user]) && !empty($_REQUEST[$pass])) {
-        if ($_REQUEST[$user] == 'testuser' && $_REQUEST[$pass] == 'testpass') {
-            $data = '1|'.md5($_REQUEST[$user] . $_REQUEST[$pass]).'|User: ' . $_REQUEST[$user] . ' successfully logged in!';
-        }else{
-            $data = '0|'.md5(date('Y-m-d h:i:s').rand(1, 9999)).'|Incorrect username or password!';
-        }
-    }else{
-        $data = '0|'.md5(date('Y-m-d h:i:s').rand(1, 9999)).'|Fill in username and password!';
-    }
-}
+	<!-- plugins -->
+	
+	<link rel="stylesheet" href="http://newmod.com.br/plugins/bootstrap/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="http://newmod.com.br/plugins/themify-icons/themify-icons.css">
+	
+	<link rel="stylesheet" href="http://newmod.com.br/plugins/magnific-popup/magnific-popup.css">
+	
+	<link rel="stylesheet" href="http://newmod.com.br/plugins/slick/slick.css">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anaheim%7cQuattrocento&#43;Sans:400,700&amp;display=swap">
+	
 
-header('Content-Type: text/plain');
-echo $data;
+	<!-- Main Stylesheet -->
+	
+	<link rel="stylesheet" href="http://newmod.com.br/css/style.min.23449a705ddad75fbe841d1d044b1d37019128d3a3d9fc1afb188a12f85c6785a7f6d2c7130f7bbbd0025e114071f4d8.css" integrity="sha384-I0SacF3a11&#43;&#43;hB0dBEsdNwGRKNOj2fwa&#43;xiKEvhcZ4Wn9tLHEw97u9ACXhFAcfTY" media="screen">
+
+  <!-- Custom stylesheet - for your changes -->
+  <link rel="stylesheet" href="/css/custom.css" media="screen">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="http://newmod.com.br/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="http://newmod.com.br/images/favicon.png" type="image/x-icon">
+
+	
+
+</head>
+
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="55">
+  <div id="content">
+    
+
+
+
+
+
+
+<!-- Welcome Slider-->
+<section class="hero-area" style='background-image: url("http://newmod.com.br/images/backgrounds/hero-area.webp")'>
+	
+	<img style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(http:\/\/newmod.com.br\/images\/backgrounds\/hero-area.jpg)'" src="http://newmod.com.br/images/backgrounds/hero-area.webp" />
+
+	<div class="block">
+		
+		<h1>Experience the new reality</h1>
+		<p>The New Generation Of Android Modding!</p>
+		
+		
+		<a href="#services" class="btn btn-transparent page-scroll">Explore Us</a>
+		
+		
+	</div>
+</section>
+<!-- /Welcome Slider-->
+
+
+
+
+<section class="sticky-top navigation">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand p-0" href="/">
+				
+				<img class="img-fluid" src="http://newmod.com.br/images/logo.png" alt="NewMod"> <b>NewMod</b>
+				
+			</a>
+
+			<button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="#body">Home</a></li>
+					
+					
+					<li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#services">Service</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+					
+
+					
+
+
+					
+
+				</ul>
+				
+				<select id="select-language" onchange="location = this.value;">
+					
+					
+					
+					
+					
+					
+					
+					
+					<option id="en" value="http://newmod.com.br/" selected>En
+					</option>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<option id="br" value="http://newmod.com.br/br/">Br</option>
+					
+					
+					
+					
+				</select>
+				
+			</div>
+		</nav>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- Start About Section -->
+<section class="bg-one about section" id="about">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+					<h2>  About <span class="color">
+							 Us  </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-ruler-pencil"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Creative</h3>
+						<p>The New Modding Style.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-cup"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Professional</h3>
+						<p>The Mobile Game Engine.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-thought"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Genius</h3>
+						<p>Programing.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- /about -->
+
+
+
+
+
+
+
+
+<!-- feature -->
+<section class="section section-bg about-2 padding-0" id="feature">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 padding-0" style="background-image: url('http://newmod.com.br/images/about/about-business-man.webp'); background-size: cover; background-position: top center; background-repeat: no-repeat; min-height: 400px;">
+			
+			<img style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(http:\/\/newmod.com.br\/images\/about\/about-business-man.jpg)'" src="http://newmod.com.br/images/about/about-business-man.webp" />
+			</div>
+			<div class="col-lg-6">
+				<div class="content-block">
+					<h2>We’re A Android Modding.</h2>
+					<p>We, still made new stuff of Android Modding.</p>
+					<div class="row">
+						
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-world"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">Online Server Mod</h4>
+									<p>We have online server based of mod.</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-panel"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">Easy Customization</h4>
+									<p>We have Full ESP Feature with more useful setting.</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-stats-up"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">App Mod Optimized</h4>
+									<p>Already tested and work on Android 7.1(Nougat), Android 8.0(Oreo), Android 9.0(Pie), Android 10(Q).</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-reload"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">Updated</h4>
+									<p>Keep Update If Game Version Update.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /feature -->
+
+
+
+
+
+
+
+
+<!-- Start Call To Action -->
+<section id="cta" class="call-to-action section-sm bg-1 overly" style='background-image: url("http://newmod.com.br/images/backgrounds/bg-white-wall.webp")'>
+	
+	<img style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(http:\/\/newmod.com.br\/images\/backgrounds\/bg-white-wall.jpg)'" src="http://newmod.com.br/images/backgrounds/bg-white-wall.webp" />
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2></h2>
+				<p></p>
+				
+				
+				<a href="#contact" class="btn btn-main page-scroll">Start Vip</a>
+				
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Start Services Section -->
+
+
+
+
+
+
+
+
+<!-- service -->
+<section id="services" class="bg-one section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2> Our <span class="color">
+							 Services  </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-target"></i>
+					</div>
+					<h3>AimBot</h3>
+					<p>Aimbot made auto aim at enemy.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-eye"></i>
+					</div>
+					<h3>Visibility Check</h3>
+					<p>Will check if enemy not behind a object.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-signal"></i>
+					</div>
+					<h3>FOV Angle</h3>
+					<p>Set 0°~360° of aiming at enemy.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-wand"></i>
+					</div>
+					<h3>Smart HeadShot Rate</h3>
+					<p>Set the HeadShot rate by 10%~99%.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-alert"></i>
+					</div>
+					<h3>Alert Enemy</h3>
+					<p>Show UI alert if enemy near of you.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-settings"></i>
+					</div>
+					<h3>More Useful Settings</h3>
+					<p>We have lot of useful feature on mod.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+		</div>
+	</div>
+</section>
+<!-- /service -->
+
+
+
+
+
+
+
+
+<!-- Skills -->
+<section id="skills" class="parallax-section section section-bg overly">
+	<div class="container">
+		<div class="row">
+			<!-- section title -->
+			<div class="col-lg-12">
+				<div class="title text-center">
+					<h2> Our <span class="color">
+							 Skills  </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<h2>We’ve skilled in wide range of Android, Web and Other digital tools.</h2>
+				<p> We, still learn and made new stuff!</p>
+				
+			</div>
+			<div class="col-lg-6">
+				<ul class="skill-bar">
+					
+					
+					
+					<li>
+						<p><span>01- </span>Java</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:92%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>02- </span>C/C&#43;&#43;</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:85%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>03- </span>Python</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:60%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>04- </span>PHP</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:82%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>05- </span>HTML</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:95%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>06- </span>CSS &amp; JavaScript</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:85%">
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /skill -->
+
+
+
+
+
+
+
+
+<!-- Portfolio Section -->
+<section class="portfolio section" id="portfolio">
+	<div class="container">
+		<div class="row ">
+			<div class="col-xl-12">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2> Our <span class="color">
+							 Works </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+				<!-- /section title -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="btn-group portfolio-filter btn-group-toggle justify-content-center d-flex flex-wrap"
+					data-toggle="buttons">
+					<label class="btn active">
+						<input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+					</label>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<label class="btn">
+						<input type="radio" name="shuffle-filter" value="freefire" />Free fire
+					</label>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="row shuffle-wrapper justify-content-center">
+			<!-- portfolio item -->
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-1.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-1.jpg'" alt="AimBot">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-1.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							AimBot
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-2.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-2.jpg'" alt="Visibility Check">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-2.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Visibility Check
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-1.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-2.jpg'" alt="Esp Full">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-2.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Esp Full
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-3.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-3.jpg'" alt="Esp Line Material">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-3.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Esp Line Material
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-4.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-4.jpg'" alt="Esp Line Grenade">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-4.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Esp Line Grenade
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-5.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-5.jpg'" alt="Esp Alert">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-5.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Esp Alert
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-6.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-6.jpg'" alt="HeadShoot Rate">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-6.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							HeadShoot Rate
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-7.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-7.jpg'" alt="Fov Angle">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-7.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Fov Angle
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 shuffle-item"
+				data-groups="[&quot;freefire&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="http://newmod.com.br/images/portfolio/portfolio-8.webp" onerror="this.onerror=null;this.src='http:\/\/newmod.com.br\/images\/portfolio\/portfolio-8.jpg'" alt="Through Stone Hack">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-8.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Through Stone Hack
+							
+						</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- /Portfolio -->
+
+
+
+
+
+
+
+
+<!-- Start Counter Section -->
+<section id="counter" class="parallax-section bg-1 section overly" style='background-image: url("http://newmod.com.br/images/backgrounds/bg-white-wall.webp")'>
+	
+	<img style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(http:\/\/newmod.com.br\/images\/backgrounds\/bg-white-wall.jpg)'" src="http://newmod.com.br/images/backgrounds/bg-white-wall.webp" />
+	<div class="container">
+		<div class="row justify-content-center">
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-face-smile"></i>
+					<span class="count" data-count="320">0</span>
+					<h3>Happy Clients</h3>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-medall"></i>
+					<span class="count" data-count="350">0</span>
+					<h3>Reach GrandMaster</h3>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-id-badge"></i>
+					<span class="count" data-count="158">0</span>
+					<h3>Vip Members</h3>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-gift"></i>
+					<span class="count" data-count="1250">0</span>
+					<h3>Free Trial Users</h3>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- /Counter Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start Pricing section -->
+<section id="pricing" class="pricing section">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- section title -->
+      <div class="col-lg-12">
+        <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+					<h2> Our <span class="color">
+						 Plans </span></h2>
+          <div class="border-meghna"></div>
+        </div>
+      </div>
+      <!-- /section title -->
+
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Free Trial</h3>
+            <p><strong class="value">$0</strong>/ hours</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>FreeFire Mod</li>
+            
+            <li>1 Device Allowed</li>
+            
+            <li>12 Menu Mod Features</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="404.html">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Vip Basic</h3>
+            <p><strong class="value">$10</strong>/ month</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>FreeFire Mod</li>
+            
+            <li>1 Device Allowed</li>
+            
+            <li>24 Menu Mod Features</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="http://t.me/Errcr404">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Vip Pro</h3>
+            <p><strong class="value">$18</strong>/ month</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>FreeFire Mod</li>
+            
+            <li>2 Device Allowed</li>
+            
+            <li>24 Menu Mod Features</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="http://t.me/Errcr404">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Vip Platinum</h3>
+            <p><strong class="value">$24</strong>/ month</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>FreeFire Mod</li>
+            
+            <li>3 Device Allowed</li>
+            
+            <li>24 Menu Mod Features</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="http://t.me/Errcr404">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+    </div>
+  </div>
+</section>
+<!-- /pricing -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start Contact Us -->
+<section id="contact" class="contact-us section-bg">
+	<div class="container pb-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2> Contact <span class="color">
+						 Us </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			<!-- Contact Details -->
+			<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+				<h3>Contact Details</h3>
+				<p> Contact With Admin Support </p>
+
+				
+			</div>
+
+			<!-- Contact Form -->
+			
+			<div class="contact-details">
+				
+				<div class="con-info clearfix">
+					<i class="ti-location-pin"></i>
+					<span>Brazil</span>
+				</div>
+				
+				<div class="con-info clearfix">
+					<i class="ti-location-arrow"></i>
+					<span>Telegram: @Errcr404</span>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- /contact -->
+
+
+
+
+
+
+
+
+  </div><!-- end Contact Area -->
+<footer id="footer" class="section-bg">
+	<div class="container">
+		<div class="row wow fadeInUp" data-wow-duration="500ms">
+			<div class="col-xl-12">
+
+				<!-- Footer Social Links -->
+				<div class="social-icon">
+					<ul class="list-inline">
+						
+					</ul>
+				</div>
+
+				<!-- copyright -->
+				<div class="copyright text-center">
+					<a href="http://newmod.com.br/">
+						<img src="http://newmod.com.br/images/logo.png" alt="NewMod" />
+					</a>
+					<br>
+					<p>copyright © 2020 <a href="https://gethugothemes.com">gethugothemes</a> all right reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- /footer -->
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="http://newmod.com.br/plugins/jquery/jquery.min.js"></script>
+
+<script src="http://newmod.com.br/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://newmod.com.br/plugins/slick/slick.min.js"></script>
+
+<script src="http://newmod.com.br/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="http://newmod.com.br/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="http://newmod.com.br/plugins/lazy-load/lozad.min.js"></script>
+
+<script src="http://newmod.com.br/plugins/google-map/map.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://newmod.com.br/js/script.min.882f95f2ea1a162fe7cb4bbb2ebc13a32b588315fc6a9b9f41e8b9b2945ee6b50c0007105cec0ef8810e2ee7094e90ce.js" integrity="sha384-iC&#43;V8uoaFi/ny0u7LrwToytYgxX8apufQei5spRe5rUMAAcQXOwO&#43;IEOLucJTpDO"></script>
+</body>
+
+</html>
